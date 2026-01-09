@@ -1,0 +1,31 @@
+name: Release Package at npmjs
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  npm:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        submodules: true
+    - uses: actions/setup-node@v4
+      with:
+        node-version: '24'
+        registry-url: 'https://registry.npmjs.org'
+    - name: Install, build and test
+      run: |
+        npm ci
+        npm run lint
+        npm run build-app
+        mv dist dist-pages
+        npm run build
+    - name: Publish to npm
+      run: npm publish --provenance --access=public

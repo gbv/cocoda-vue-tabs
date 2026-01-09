@@ -1,7 +1,7 @@
-# cocoda-vue-tabscocoda-vue-tabs
+# cocoda-vue-tabs
 
 [![GitHub package version](https://img.shields.io/github/package-json/v/gbv/cocoda-vue-tabs.svg?label=version)](https://github.com/gbv/cocoda-vue-tabs)
-[![NPM package name](https://img.shields.io/badge/npm-vue--flexible--table-blue.svg)](https://www.npmjs.com/package/cocoda-vue-tabs)
+[![NPM package name](https://img.shields.io/badge/npm-cocoda--vue--tabs-blue.svg)](https://www.npmjs.com/package/cocoda-vue-tabs)
 
 > A custom Vue tabs component.
 
@@ -23,7 +23,9 @@ npm install cocoda-vue-tabs
 
 ## Usage
 
-TODO
+This is only used in [Cocoda web application](https://coli-conc.gbv.de/cocoda/) for Vue 2.
+
+Please use [jskos-vue-tabs](https://www.npmjs.com/package/jskos-vue-tabs) for Vue 3 instead.
 
 ## Maintainers
 
